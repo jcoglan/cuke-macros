@@ -1,0 +1,19 @@
+CukeMacros
+==========
+
+This is an experiment to see if I can use the Heist Scheme interpreter
+and its macro system to rewrite Cucumber features at runtime, to help
+automate a few patterns.
+
+Stop making that face.
+
+http://github.com/jcoglan/heist
+
+
+Copyright (C) 2010 James Coglan <jcoglan@googlemail.com>
+
+DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
+TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
+
+  0. You just DO WHAT THE FUCK YOU WANT TO. 
+

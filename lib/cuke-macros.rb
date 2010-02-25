@@ -33,11 +33,11 @@ module CukeMacros
           elements = sexp[1..-1].map { |e| feature_element_from e }
           background = nil
           comment    = []
-          tags       = Tags.new(elements[1], elements.select(&Array.method(:===)).map { |t| t.first })
+          tags       = Tags.new(elements[1], elements.grep(Array).map { |t| t.first })
           line       = elements[0]
           keyword    = elements[1]
           name       = elements[2]
-          steps      = elements.select(&Step.method(:===))
+          steps      = elements.grep(Step)
           
           Scenario.new(background, comment, tags, line, keyword, name, steps)
           
