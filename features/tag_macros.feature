@@ -1,7 +1,18 @@
 Feature: Tags that modify scenarios
   
-  @outline
+  @split_test
   Scenario: Standard users
-    Given I am in group "<group>"
     Then I should see "<result>"
   
+  @outline
+  Scenario Outline: Something
+    Given I am in group "A"
+  
+  @outline
+  Scenario Outline: Something
+    Given I am in group "<group>"
+  Examples:
+    | group |
+    | A     |
+    | B     |
+
